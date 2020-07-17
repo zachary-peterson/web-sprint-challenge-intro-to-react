@@ -13,16 +13,26 @@ const info = props.info;
 
 const StyledChar = styled.div`
     width: 75%;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
     margin: 1% auto;
+    border: solid 5px red;
+    outline: solid 5px blue;
 
-    button {
-        margin: 1%;
-        background-color: #000000;
+    p {
         color: #FFFFFF;
+        font-family: 'Courier New', Courier, monospace;;
     }
+
+    .imp  {
+        font-size: 2rem;
+
+        &:hover {
+            font-family: fantasy;
+        }
+    }
+
 `
 
 console.log(props.info)
@@ -30,7 +40,7 @@ console.log(props.info)
 return info.map(ch => {
     return (
     <StyledChar key={ch.name}>
-        <p>{ch.name}</p>
+        <p className="imp">{ch.name}</p>
         <p>{ch['birth_year']}</p>
     </StyledChar>
 );
