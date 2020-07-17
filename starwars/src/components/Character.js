@@ -24,6 +24,8 @@ const StyledChar = styled.div`
     &:hover {
         width: 80%;
         font-size: 1.25rem;
+        border: solid 10px red;
+        outline: solid 0px blue;
     }
 
     p {
