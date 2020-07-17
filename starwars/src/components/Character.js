@@ -19,24 +19,28 @@ const StyledChar = styled.div`
     margin: 1% auto;
     border: solid 5px red;
     outline: solid 5px blue;
+    transition: 1s;
+
+    &:hover {
+        width: 80%;
+        font-size: 1.25rem;
+    }
 
     p {
         color: #FFFFFF;
-        font-family: 'Courier New', Courier, monospace;;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .imp  {
         font-size: 2rem;
+        transition: 1s;
+        width: 100%;
 
-        &:hover {
-            font-family: fantasy;
-            text-shadow: 2px 2px #CCCC00;
+        &:hover  {
+            font-size: 2.5rem;
         }
     }
 
-    .fancy  {
-        
-    }
 
 `
 
