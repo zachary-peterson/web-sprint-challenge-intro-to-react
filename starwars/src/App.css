@@ -10,15 +10,3 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
-
-.char-info-panel {
-  width: 75%;
-  background-color: #FFFFFF;
-  color: #000000;
-  text-align: center;
-  margin: 1% auto;
-}
-
-.left  {
-  width: 50%;
-}

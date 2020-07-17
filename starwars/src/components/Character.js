@@ -30,7 +30,12 @@ const StyledChar = styled.div`
 
         &:hover {
             font-family: fantasy;
+            text-shadow: 2px 2px #CCCC00;
         }
+    }
+
+    .fancy  {
+        
     }
 
 `
@@ -41,6 +46,7 @@ return info.map(ch => {
     return (
     <StyledChar key={ch.name}>
         <p className="imp">{ch.name}</p>
+        <p className="fancy">Born:</p>
         <p>{ch['birth_year']}</p>
     </StyledChar>
 );
